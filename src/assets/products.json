@@ -1,0 +1,74 @@
+[
+  {
+    "id": "t-shirt",
+    "name": "G + 2",
+    "price": "35 million",
+    "imageUrl": "https://images8.alphacoders.com/541/thumb-1920-541822.jpg",
+    "description": "G + 2 house, with a lot of rooms",
+    "url": "/api/products/halfmoon"
+  },
+  {
+    "id": "L - Shape",
+    "name": "L - Shape",
+    "price": "20 million",
+    "imageUrl": "https://downloadhdwallpapers.in/wp-content/uploads/2018/01/Luxury-Home-at-Night-1920x1200.jpg",
+    "description": "A great house",
+    "url": "/api/products/wallet"
+  },
+  {
+    "id": "G + 3",
+    "name": "G + 3",
+    "price": "100 million",
+    "imageUrl": "https://media.architecturaldigest.com/photos/59247945b9b8a34d26abab73/master/pass/harry-styles-california-01.jpg",
+    "description": "Good house",
+    "url": "/api/products/veiltail"
+  },
+  {
+    "id": "t-shirt",
+    "name": "G + 2",
+    "price": "35 million",
+    "imageUrl": "https://images8.alphacoders.com/541/thumb-1920-541822.jpg",
+    "description": "G + 2 house, with a lot of rooms",
+    "url": "/api/products/halfmoon"
+  },
+  {
+    "id": "L - Shape",
+    "name": "L - Shape",
+    "price": "20 million",
+    "imageUrl": "https://downloadhdwallpapers.in/wp-content/uploads/2018/01/Luxury-Home-at-Night-1920x1200.jpg",
+    "description": "A great house",
+    "url": "/api/products/wallet"
+  },
+  {
+    "id": "G + 3",
+    "name": "G + 3",
+    "price": "100 million",
+    "imageUrl": "https://media.architecturaldigest.com/photos/59247945b9b8a34d26abab73/master/pass/harry-styles-california-01.jpg",
+    "description": "Good house",
+    "url": "/api/products/veiltail"
+  },
+  {
+    "id": "t-shirt",
+    "name": "G + 2",
+    "price": "35 million",
+    "imageUrl": "https://images8.alphacoders.com/541/thumb-1920-541822.jpg",
+    "description": "G + 2 house, with a lot of rooms",
+    "url": "/api/products/halfmoon"
+  },
+  {
+    "id": "L - Shape",
+    "name": "L - Shape",
+    "price": "20 million",
+    "imageUrl": "https://downloadhdwallpapers.in/wp-content/uploads/2018/01/Luxury-Home-at-Night-1920x1200.jpg",
+    "description": "A great house",
+    "url": "/api/products/wallet"
+  },
+  {
+    "id": "G + 3",
+    "name": "G + 3",
+    "price": "100 million",
+    "imageUrl": "https://media.architecturaldigest.com/photos/59247945b9b8a34d26abab73/master/pass/harry-styles-california-01.jpg",
+    "description": "Good house",
+    "url": "/api/products/veiltail"
+  }
+]
