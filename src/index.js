@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from "./pages/Login";
+import Post from "./pages/Post";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import NoPage from "./pages/NoPage";
+
+
+// import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="login" element={<Login />} />
+      <Route path="post" element={<Post />} />
+      <Route path="*" element={<NoPage />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
