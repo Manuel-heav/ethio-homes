@@ -2,11 +2,18 @@ import React, { useState } from 'react'
 import "../App.css"
 import "../index.css"
 import { db, storage } from '../Firebase'
+import {
+        ref,
+        uploadBytesResumable,
+        getDownloadURL 
+    } from "firebase/storage";
 const Home = () => {
 
     const [address, setAddress] = useState("")
     const [type, setType] = useState("")
-    const [image, setImage] = useState(null)
+    // const [image, setImage] = useState(null)
+    const [image, setImage] = useState("")
+
     const [numberOfRooms, setNumberOfRooms] = useState(0);
     const [area, setArea] = useState(0);
     const [price, setPrice] = useState(0);
@@ -14,12 +21,12 @@ const Home = () => {
     const [progress, setProgress] = useState(0)
 
     const handleChange = (e) => {
-        if (e.target.value[0]) {
+        // if (e.target.value[0]) {
             setImage(e.target.files[0])
-        }
+        // }
     }
-
-    const handleUpload = () => {
+    console.log(image)
+    const handleUpload =  () => {
         const uploadTask = storage.ref(`images/${image.name}`).put(image);
         uploadTask.on(
             "state_changed",
@@ -101,14 +108,16 @@ const Home = () => {
                     </label>
                     <label class="block">
                         <span class="sr-only">Choose profile photo</span>
-                        <input onChange={handleChange} type="file" class="block w-full text-sm text-slate-500
-      file:mr-4 file:py-2 file:px-4 mb-5 mt-5
-      file:rounded-full file:border-0
-      file:text-sm file:font-semibold
-      file:bg-violet-50 file:text-violet-700
-      hover:file:bg-violet-100
-    "/>
+
                     </label>
+                    
+ <input onChange={handleChange} type="file" class="block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4 mb-5 mt-5
+       file:rounded-full file:border-0
+       file:text-sm file:font-semibold
+       file:bg-violet-50 file:text-violet-700
+       hover:file:bg-violet-100
+     "/>
                 </form>
 
                 <button onClick={handleUpload} class="w-full shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
@@ -120,3 +129,4 @@ const Home = () => {
 }
 
 export default Home
+
