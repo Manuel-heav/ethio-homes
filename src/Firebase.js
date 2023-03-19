@@ -1,23 +1,26 @@
 import firebase from "firebase/compat/app";
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-import 'firebase/compat/storage'
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
+import "firebase/compat/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAzj-qRnqRZ9DNryXNljvCE5ugv32s1lFs",
-    authDomain: "ethio-homes-51f7d.firebaseapp.com",
-    projectId: "ethio-homes-51f7d",
-    storageBucket: "ethio-homes-51f7d.appspot.com",
-    messagingSenderId: "266443645152",
-    appId: "1:266443645152:web:84aa51537a67bcd7dcb085",
-    measurementId: "G-SW8Z5GQQSY"
-  };
+  apiKey: "AIzaSyC9HPiMuybNyFczfwCw2hhJCbNqkgeDSM0",
+  authDomain: "et-homes-5c2e0.firebaseapp.com",
+  projectId: "et-homes-5c2e0",
+  storageBucket: "et-homes-5c2e0.appspot.com",
+  messagingSenderId: "1053061660379",
+  appId: "1:1053061660379:web:4767debae705d63ebb56fe",
+  measurementId: "G-8FS4Y0RGRB",
+};
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
 const storage = firebase.storage();
-const auth = firebase.auth();
+const auth = getAuth(app);
 
-export {db, auth, storage}
+const provider = new GoogleAuthProvider();
+
+export { db, auth, storage, provider };

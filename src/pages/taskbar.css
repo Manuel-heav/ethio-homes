@@ -1,0 +1,19 @@
+.logo{
+    height: 90px;
+}
+
+.taskbar{
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+}
+
+.link_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin: 30px;
+}

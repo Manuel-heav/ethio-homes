@@ -27,6 +27,7 @@ const Home = () => {
     }
     console.log(image)
     const handleUpload =  () => {
+        // Uploading images function
         const uploadTask = storage.ref(`images/${image.name}`).put(image);
         uploadTask.on(
             "state_changed",
